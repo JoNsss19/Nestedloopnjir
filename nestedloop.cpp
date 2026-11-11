@@ -1,11 +1,22 @@
 #include <iostream>
-#include <stdlib.h>
 
 int baris, kolom, tinggi;
 
 void getTinggi() {
     std::cout << "Masukkan jumlah tinggi: ";
     std::cin >> tinggi;
+}
+
+void exitMenu() {
+    char choice;
+    std::cout << "back to menu [y/Y] : " << std::endl;
+    std::cin >> choice;
+    std::cin.ignore();
+    if (choice == 'y' || choice == 'Y') {
+        system("cls");
+    } else {
+        system("cls");
+    }
 }
 
 void nested1 () {
@@ -171,38 +182,47 @@ int main() {
     if (pilihan == 1) {
         nested1();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 2) {
         nested2();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 3) {
         nested3();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 4 ) {
         nested4();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 5) {
         nested5();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 6) {
         nested6();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 7) {
         nested7();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 8) {
         nested8();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 9) {
         nested9();
         tinggi = 0;
+        exitMenu();
         goto menu;
     } else if (pilihan == 10) {
         std::cin.ignore();
